@@ -1,5 +1,8 @@
 # CGDN-SpringBoot-JPA
 
+### Chúng ta sẽ xây dựng ứng dụng quản lý phòng ban tại 1 công ty kinh doanh. Một phòng ban gồm nhiều nhân viên. Ví dụ như phòng kế toán có nhân viên A,B,C ; phòng nhân sự có nhân viên XYZ.
++ Chuẩn bị database tên company . Trong database company tạo 2 table là department (phòng ban) và employee (nhân viên).
+ 
 CREATE TABLE `company`.`department` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
@@ -30,14 +33,16 @@ CREATE TABLE `company`.`department` (
 
 INSERT INTO `company`.`employee` (`id`, `name`, `age`, `email`, `departmentId`) VALUES ('1', 'Le Vu Nguen', '36', 'nguyen.le@codegym.vn', '1');
 
++ Quan hệ một nhiều được 
 
-5.3.2. Query Creation
-5.3.3. Using JPA Named Queries
-5.3.4. Using @Query
-5.3.5. Using Sort
-5.3.6. Using Named Parameters
-5.3.7. Using SpEL Expressions
-5.3.8. Modifying Queries
-5.3.9. Applying Query Hints
-5.3.10. Configuring Fetch- and LoadGraphs
-5.3.11. Projections
+
++ Query Creation
++ Using JPA Named Queries
++ Using @Query
++ Using Sort
++ Using Named Parameters
++ Using SpEL Expressions
++ Modifying Queries
++ Applying Query Hints
++ Configuring Fetch- and LoadGraphs
++ Projections
