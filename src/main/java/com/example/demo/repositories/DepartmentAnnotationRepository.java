@@ -4,8 +4,10 @@ import com.example.demo.entity.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
+@Transactional
 public interface DepartmentAnnotationRepository extends JpaRepository<Department,Integer> {
 
     @Query("select department from Department department where department.name = ?1")
