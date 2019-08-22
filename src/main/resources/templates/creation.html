@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h3>Products</h3>
+
+<table id = "products">
+    <thead>
+    <tr>
+
+        <th>ID</th>
+        <th>Decription</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="department: ${departments}">
+        <td th:text="${department.getId()}"></td>
+        <td th:text="${department.getDescription()}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

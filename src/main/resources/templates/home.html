@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html xmlns:th="http://www.thymeleaf.org">
 <body>
-
-    <p>Simple Text Field: <input type="text" th:field="*{textField}" /></p>
+<h3>Products</h3>
+<p>
+    <a th:href="@{/creationFindbyDepartmentName/Software}">
+        Query Creation Find By Department
+    </a>
+</p>
 
 </body>
 </html>

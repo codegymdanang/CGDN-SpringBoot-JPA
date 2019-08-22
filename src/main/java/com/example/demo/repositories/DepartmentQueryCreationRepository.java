@@ -17,13 +17,13 @@ public interface DepartmentQueryCreationRepository extends JpaRepository<Departm
     List<Department> findByNameEndingWith(String name);
     List<Department> findByNameIgnoreCase(String name);
 
-    List<Department> findByEmail(String email);
-    List<Department> findByNameAndLocal(String name,String local);
+
+    /* List<Department> findByNameAndLocal(String name,String local);
     List<Department> findByNameOrLocal(String name,String local);
     List<Department> findByNameNot(String name);
     List<Department> findByDateAfter(Date date);
     List<Department> findByDateBefore (Date date);
-    List<Department> findByDateBetween(Date from,Date to);
+    List<Department> findByDateBetween(Date from,Date to); */
 
 
 
