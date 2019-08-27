@@ -8,7 +8,7 @@ CREATE TABLE `company`.`department` (
   `name` VARCHAR(45) NULL,
   `description` VARCHAR(45) NULL,
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) );
   
   CREATE TABLE `company`.`employee` (
     `id` INT NOT NULL AUTO_INCREMENT,
@@ -17,10 +17,10 @@ CREATE TABLE `company`.`department` (
     `email` VARCHAR(45) NULL,
     `departmentId` INT NULL,
     PRIMARY KEY (`id`),
-    UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
+    UNIQUE INDEX `id_UNIQUE` (`id` ASC) );
     
     ALTER TABLE `company`.`employee` 
-    ADD INDEX `department_employeen_idx` (`departmentId` ASC) VISIBLE;
+    ADD INDEX `department_employeen_idx` (`departmentId` ASC) ;
     ;
     ALTER TABLE `company`.`employee` 
     ADD CONSTRAINT `department_employeen`
