@@ -24,8 +24,5 @@ public class Department implements Serializable {
     @Column(name = "description")
     public String description;
 
-    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
-    private Set<Employee> employees;
-
 
 }
